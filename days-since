@@ -1,0 +1,8 @@
+#!/bin/bash
+
+NOW=$(date +%s)
+PREV=$(date +%s --date=$1)
+
+DIFF=$(($NOW - $PREV))
+
+echo $(($DIFF / (3600 * 24))) days
